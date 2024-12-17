@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbOtelYeniModelStoreContainer" CdmEntityContainer="DbOtelYeniEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.sysdiagrams)">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblBirim">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblBirim)">
+        <MappingFragment StoreEntitySet="TblBirim">
+          <ScalarProperty Name="BirimID" ColumnName="BirimID" />
+          <ScalarProperty Name="BirimAd" ColumnName="BirimAd" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblDepartman">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblDepartman)">
+        <MappingFragment StoreEntitySet="TblDepartman">
+          <ScalarProperty Name="DepartmanID" ColumnName="DepartmanID" />
+          <ScalarProperty Name="DepartmanAd" ColumnName="DepartmanAd" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblDurum">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblDurum)">
+        <MappingFragment StoreEntitySet="TblDurum">
+          <ScalarProperty Name="DurumID" ColumnName="DurumID" />
+          <ScalarProperty Name="DurumAd" ColumnName="DurumAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblGorev">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblGorev)">
+        <MappingFragment StoreEntitySet="TblGorev">
+          <ScalarProperty Name="GorevID" ColumnName="GorevID" />
+          <ScalarProperty Name="GorevAd" ColumnName="GorevAd" />
+          <ScalarProperty Name="Departman" ColumnName="Departman" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblKasa">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblKasa)">
+        <MappingFragment StoreEntitySet="TblKasa">
+          <ScalarProperty Name="KasaID" ColumnName="KasaID" />
+          <ScalarProperty Name="KasaAdi" ColumnName="KasaAdi" />
+          <ScalarProperty Name="Bakiye" ColumnName="Bakiye" />
+          <ScalarProperty Name="Giren" ColumnName="Giren" />
+          <ScalarProperty Name="Cikan" ColumnName="Cikan" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblKur">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblKur)">
+        <MappingFragment StoreEntitySet="TblKur">
+          <ScalarProperty Name="KurID" ColumnName="KurID" />
+          <ScalarProperty Name="KurAd" ColumnName="KurAd" />
+          <ScalarProperty Name="Sembol" ColumnName="Sembol" />
+          <ScalarProperty Name="Deger" ColumnName="Deger" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblMisafir">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblMisafir)">
+        <MappingFragment StoreEntitySet="TblMisafir">
+          <ScalarProperty Name="MisafirID" ColumnName="MisafirID" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="KimlikFoto1" ColumnName="KimlikFoto1" />
+          <ScalarProperty Name="KimlikFoto2" ColumnName="KimlikFoto2" />
+          <ScalarProperty Name="Ulke" ColumnName="Ulke" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+          <ScalarProperty Name="sehir" ColumnName="sehir" />
+          <ScalarProperty Name="ilce" ColumnName="ilce" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblOda">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblOda)">
+        <MappingFragment StoreEntitySet="TblOda">
+          <ScalarProperty Name="OdaID" ColumnName="OdaID" />
+          <ScalarProperty Name="OdaNo" ColumnName="OdaNo" />
+          <ScalarProperty Name="Kat" ColumnName="Kat" />
+          <ScalarProperty Name="Kapasite" ColumnName="Kapasite" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblPersonel">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblPersonel)">
+        <MappingFragment StoreEntitySet="TblPersonel">
+          <ScalarProperty Name="PersonelID" ColumnName="PersonelID" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="IseGirisTarih" ColumnName="IseGirisTarih" />
+          <ScalarProperty Name="IstenCikisTarih" ColumnName="IstenCikisTarih" />
+          <ScalarProperty Name="Departman" ColumnName="Departman" />
+          <ScalarProperty Name="Gorev" ColumnName="Gorev" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+          <ScalarProperty Name="KimlikOn" ColumnName="KimlikOn" />
+          <ScalarProperty Name="KimlkArka" ColumnName="KimlkArka" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Yetki" ColumnName="Yetki" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblTelefon">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblTelefon)">
+        <MappingFragment StoreEntitySet="TblTelefon">
+          <ScalarProperty Name="TelefonID" ColumnName="TelefonID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblUlke">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblUlke)">
+        <MappingFragment StoreEntitySet="TblUlke">
+          <ScalarProperty Name="UlkeID" ColumnName="UlkeID" />
+          <ScalarProperty Name="UlkeAd" ColumnName="UlkeAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblUrun">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblUrun)">
+        <MappingFragment StoreEntitySet="TblUrun">
+          <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+          <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />
+          <ScalarProperty Name="UrunGrup" ColumnName="UrunGrup" />
+          <ScalarProperty Name="Birim" ColumnName="Birim" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="Toplam" ColumnName="Toplam" />
+          <ScalarProperty Name="Kdv" ColumnName="Kdv" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblUrunGrup">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblUrunGrup)">
+        <MappingFragment StoreEntitySet="TblUrunGrup">
+          <ScalarProperty Name="UrunGrupID" ColumnName="UrunGrupID" />
+          <ScalarProperty Name="UrunGrupAd" ColumnName="UrunGrupAd" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ilceler">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.ilceler)">
+        <MappingFragment StoreEntitySet="ilceler">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ilce" ColumnName="ilce" />
+          <ScalarProperty Name="sehir" ColumnName="sehir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="iller">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.iller)">
+        <MappingFragment StoreEntitySet="iller">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sehir" ColumnName="sehir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblUrunHareket">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblUrunHareket)">
+        <MappingFragment StoreEntitySet="TblUrunHareket">
+          <ScalarProperty Name="Hareketid" ColumnName="Hareketid" />
+          <ScalarProperty Name="Urun" ColumnName="Urun" />
+          <ScalarProperty Name="HareketTuru" ColumnName="HareketTuru" />
+          <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="BirimFiyat" ColumnName="BirimFiyat" />
+          <ScalarProperty Name="ToplamFiyat" ColumnName="ToplamFiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblRezervasyon">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblRezervasyon)">
+        <MappingFragment StoreEntitySet="TblRezervasyon">
+          <ScalarProperty Name="RezervasyonID" ColumnName="RezervasyonID" />
+          <ScalarProperty Name="Misafir" ColumnName="Misafir" />
+          <ScalarProperty Name="GirisTarih" ColumnName="GirisTarih" />
+          <ScalarProperty Name="CikisTarih" ColumnName="CikisTarih" />
+          <ScalarProperty Name="Kisi" ColumnName="Kisi" />
+          <ScalarProperty Name="Oda" ColumnName="Oda" />
+          <ScalarProperty Name="RezervasyonAdSoyad" ColumnName="RezervasyonAdSoyad" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+          <ScalarProperty Name="Kisi1" ColumnName="Kisi1" />
+          <ScalarProperty Name="Kisi2" ColumnName="Kisi2" />
+          <ScalarProperty Name="Kisi3" ColumnName="Kisi3" />
+          <ScalarProperty Name="Toplam" ColumnName="Toplam" />
+          <ScalarProperty Name="KasayaAktar" ColumnName="KasayaAktar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblYeniKayit">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblYeniKayit)">
+        <MappingFragment StoreEntitySet="TblYeniKayit">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblOnRezervasyon">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblOnRezervasyon)">
+        <MappingFragment StoreEntitySet="TblOnRezervasyon">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="GirisTarih" ColumnName="GirisTarih" />
+          <ScalarProperty Name="CikisTarih" ColumnName="CikisTarih" />
+          <ScalarProperty Name="Kisi" ColumnName="Kisi" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblEkibimiz">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblEkibimiz)">
+        <MappingFragment StoreEntitySet="TblEkibimiz">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="Gorsel" ColumnName="Gorsel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbliletisim">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.Tbliletisim)">
+        <MappingFragment StoreEntitySet="Tbliletisim">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Koordinat" ColumnName="Koordinat" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblMesaj">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblMesaj)">
+        <MappingFragment StoreEntitySet="TblMesaj">
+          <ScalarProperty Name="MesajID" ColumnName="MesajID" />
+          <ScalarProperty Name="Gonderen" ColumnName="Gonderen" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Konu" ColumnName="Konu" />
+          <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblMesaj2">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblMesaj2)">
+        <MappingFragment StoreEntitySet="TblMesaj2">
+          <ScalarProperty Name="MesajID" ColumnName="MesajID" />
+          <ScalarProperty Name="Gonderen" ColumnName="Gonderen" />
+          <ScalarProperty Name="Alici" ColumnName="Alici" />
+          <ScalarProperty Name="Konu" ColumnName="Konu" />
+          <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblHakkimda">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblHakkimda)">
+        <MappingFragment StoreEntitySet="TblHakkimda">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Hakkimda1" ColumnName="Hakkimda1" />
+          <ScalarProperty Name="Hakkimda2" ColumnName="Hakkimda2" />
+          <ScalarProperty Name="Hakkimda3" ColumnName="Hakkimda3" />
+          <ScalarProperty Name="Hakkimda4" ColumnName="Hakkimda4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblAdmin">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblAdmin)">
+        <MappingFragment StoreEntitySet="TblAdmin">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Rol" ColumnName="Rol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblKasaHareketi">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblKasaHareketi)">
+        <MappingFragment StoreEntitySet="TblKasaHareketi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Misafir" ColumnName="Misafir" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Tutar" ColumnName="Tutar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblKasaCikisHareketi">
+      <EntityTypeMapping TypeName="IsTypeOf(DbOtelYeniModel.TblKasaCikisHareketi)">
+        <MappingFragment StoreEntitySet="TblKasaCikisHareketi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Tutar" ColumnName="Tutar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
